@@ -6,3 +6,7 @@ this plugin creates a section of a wikipedia extract on the authority page (/cgi
 
 just download the kpz file https://github.com/HKS3/koha-plugin-link2wikipedia/blob/main/koha-plugin-link2wikipedia.kpz and proceed to 
 normal Koha-plugin install see https://koha-community.org/manual/18.05/en/html/14_plugins.html
+
+# Sponsor
+
+Sponsored-by: Styrian State Library
