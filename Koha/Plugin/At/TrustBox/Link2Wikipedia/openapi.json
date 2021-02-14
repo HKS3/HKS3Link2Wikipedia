@@ -1,0 +1,47 @@
+{
+  "/gnd": {
+    "get": {
+      "x-mojo-to": "At::TrustBox::Link2Wikipedia::Link2WikipediaController#get",
+      "operationId": "Link2Wikipedia",
+      "tags": ["authority"],
+      "parameters": [{
+        "name": "id",
+        "in": "query",
+        "description": "gnd id",
+        "required": true,
+        "type": "string"
+      }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "responses": {
+        "200": {
+          "description": "get extract from wikipedia",
+          "schema": {
+              "type": "object",
+                "properties": {
+                  "link": {
+                    "description": "redirect to wikipedia",
+                    "type": "boolean"
+                  }
+                }
+          }
+        },
+        "404": {
+          "description": "An error occured",
+          "schema": {
+              "type": "object",
+                "properties": {
+                  "error": {
+                    "description": "No entry found",
+                    "type": "string"
+                  }
+                }
+          }
+        }
+      }
+    }
+  }
+}
+
