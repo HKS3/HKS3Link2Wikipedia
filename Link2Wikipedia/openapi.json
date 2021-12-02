@@ -1,7 +1,7 @@
 {
   "/gnd": {
     "get": {
-      "x-mojo-to": "At::TrustBox::Link2Wikipedia::Link2WikipediaController#get",
+      "x-mojo-to": "HKS3Link2Wikipedia::Link2Wikipedia::Link2WikipediaController#get",
       "operationId": "Link2Wikipedia",
       "tags": ["authority"],
       "parameters": [{
@@ -44,4 +44,3 @@
     }
   }
 }
-

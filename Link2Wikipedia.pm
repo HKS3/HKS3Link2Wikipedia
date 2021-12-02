@@ -1,4 +1,4 @@
-package Koha::Plugin::At::TrustBox::Link2Wikipedia;
+package Koha::Plugin::HKS3Link2Wikipedia::Link2Wikipedia;
 
 use Modern::Perl;
 
@@ -81,9 +81,9 @@ sub opac_js {
         })
         .done(function(data) {
             console.log('fetched data from wikipedia');
-            $('<div class="newscontainer"><div class="media"><span class="label">Wikipedia</span><br>' + 
-            '<span class="float-left media-left mx-2"><img id="wikipedia_image" src=""/></span>' + 
-            '<div class="media-body"><div id="wikipedia_extract"></div><a id="wikipedia_url" target="_blank" href="#">' + 
+            $('<div class="newscontainer"><div class="media"><span class="label">Wikipedia</span><br>' +
+            '<span class="float-left media-left mx-2"><img id="wikipedia_image" src=""/></span>' +
+            '<div class="media-body"><div id="wikipedia_extract"></div><a id="wikipedia_url" target="_blank" href="#">' +
             '<img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Banner_80x15.png"></a></div></div></div>')
             .insertAfter( ".usedin" );
             $('#wikipedia_extract').html(data.content);
@@ -91,7 +91,7 @@ sub opac_js {
             $("#wikipedia_image").attr("src", data.image_url).load(function(){
                  this.width;
                 });
-            
+
             })
         .error(function(data) {});
         });
@@ -99,6 +99,6 @@ sub opac_js {
     }
     </script>
 JS
-    
+
     return $js;
 }
