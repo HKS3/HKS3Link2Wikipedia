@@ -1,4 +1,4 @@
-# koha-plugin-link2wikipedia
+HKS3Link2Wikipedia
 
 this plugin creates a section of a wikipedia extract on the authority page (/cgi-bin/koha/opac-authoritiesdetail.pl?authid=<authid>)
 
