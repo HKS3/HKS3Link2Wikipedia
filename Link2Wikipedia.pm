@@ -50,6 +50,7 @@ sub api_namespace {
 
 sub opac_head {
     my ( $self ) = @_;
+    return undef;
 }
 
 sub opac_js {
@@ -61,6 +62,7 @@ sub opac_js {
     my $record = GetAuthority( $authid );
 
     my $authority = Koha::Authorities->find( $authid );
+    return undef unless $record->field('035');
     my @f35 =  $record->field('035')->subfields;
     my $gnd = $f35[0][1];
     $gnd =~ s/\(.*\)//;
