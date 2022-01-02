@@ -82,7 +82,7 @@ sub opac_js {
             data: ajaxData,
         })
         .done(function(data) {
-            console.log('fetched data from wikipedia');
+            // console.log('fetched data from wikipedia');
             $('<div class="newscontainer"><div class="media"><span class="label">Wikipedia</span><br>' +
             '<span class="float-left media-left mx-2"><img id="wikipedia_image" src=""/></span>' +
             '<div class="media-body"><div id="wikipedia_extract"></div><a id="wikipedia_url" target="_blank" href="#">' +
