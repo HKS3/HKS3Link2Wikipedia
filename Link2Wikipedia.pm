@@ -59,7 +59,7 @@ sub opac_js {
     return unless $cgi->script_name =~ /opac-authoritiesdetail.pl/;
     my $authid = $cgi->param('authid');
     return unless $authid;
-    my $record = GetAuthority( $authid );
+    my $record = C4::AuthoritiesMarc::GetAuthority( $authid );
 
     my $authority = Koha::Authorities->find( $authid );
     return undef unless $record->field('035');

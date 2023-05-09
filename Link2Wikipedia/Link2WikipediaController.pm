@@ -3,8 +3,7 @@ package Koha::Plugin::HKS3Link2Wikipedia::Link2Wikipedia::Link2WikipediaControll
 use Mojo::Base 'Mojolicious::Controller';
 
 use C4::Context;
-use C4::Debug;
-use C4::Output qw(:html :ajax pagination_bar);
+# use C4::Output qw(:html :ajax pagination_bar);
 
 use HTTP::Request;
 use LWP::UserAgent;
